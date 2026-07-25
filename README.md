@@ -3,15 +3,15 @@
 
 ## 📚 项目简介
 
-tdskill-basic 是一个面向情感成长场景的中文 AI Skills 工具箱。它从兔导的 **195 篇公众号推文累计45万字**中提炼出 **1144 个知识原子**，覆盖认知提升、展示面打造、搭讪、聊天、约会、关系管理和学习方法七大领域，并将其中的方法沉淀为 **8 个可直接调用的 Skills**。
+Tdskill 是一个面向情感成长场景的中文 AI Skills 工具箱。它从兔导的 195 篇公众号推文累计45万字中提炼出 1144 个知识原子，覆盖认知提升、展示面打造、搭讪、聊天、约会、关系管理和学习方法七大领域，并将其中的方法沉淀为 8 个可直接调用的 Skills。
 
-你不需要先学会一套复杂的方法，也不需要知道该调用哪个工具。把当下的情感处境交给 `/tdskill-basic`，它会根据对话上下文选择当前最适合的 Skill。
+你不需要先学会一套复杂的方法，也不需要知道该调用哪个工具。把当下的情感处境交给 /tdskill，它会根据对话上下文选择当前最适合的 Skill。
 
 ## 🧠 8 个 Skill 功能概述
 
 | Skill | 作用 |
 | --- | --- |
-| `/tdskill-basic` | 主入口路由器，根据问题自动选择合适的诊断 Skill |
+| `/tdskill` | 主入口路由器，根据问题自动选择合适的诊断 Skill |
 | `/tds-attraction` | 认知提升诊断，找到吸引力层面的认知卡点 |
 | `/tds-display` | 展示面与人设打造诊断，传递正确的信号 |
 | `/tds-approach` | 搭讪诊断，自然地开始一次交流 |
@@ -27,7 +27,7 @@ tdskill-basic 是一个面向情感成长场景的中文 AI Skills 工具箱。�
 安装完成后，直接在 Agent 中输入：
 
 ```text
-/tdskill-basic 我最近认识了一个女生，聊了一周但感觉越来越冷，不知道哪里出了问题。
+/tdskill 我最近认识了一个女生，聊了一周但感觉越来越冷，不知道哪里出了问题。
 ```
 
 主入口会读取当前对话信息，自动选择合适的分析路径。
@@ -47,16 +47,16 @@ tdskill-basic 是一个面向情感成长场景的中文 AI Skills 工具箱。�
 ### 通过 npx 安装
 
 ```bash
-npx -y skills add tdskill-basic/tdskill-basic -g --all
+npx -y skills add tdskill/tdskill -g --all
 ```
 
-安装后回到 Agent，输入 `/tdskill-basic 新手入门` 即可开始。
+安装后回到 Agent，输入 `/tdskill 新手入门` 即可开始。
 
 ### Claude Code 插件市场
 
 ```bash
-claude plugin marketplace add tdskill-basic/tdskill-basic
-claude plugin install tdskill-basic@tdskill-basic
+claude plugin marketplace add tdskill/tdskill
+claude plugin install tdskill@tdskill
 ```
 
 ## 💡 关于作者
@@ -72,28 +72,16 @@ claude plugin install tdskill-basic@tdskill-basic
 
 **Skill 来源：** tdskill-basic 中全部的文案、语料库、方法论和案例均来源于兔导个人撰写创造的内容。
 
-## ⚠️ 当前不足 ⚠️ 
-
-1. **语料不完整**：只读取了兔导的两个公众号【兔子舞的奇思妙想y】以及【兔子舞随札y】的部分文章，不包括：
-   - 大约有20篇被删除的文章，这部分文章没有纳入语料库
-   - 大约有10篇因为和谐原因没有写完整的文章（特别是私密空间部分）
-
-2. **缺少两大资料库**：
-   - 兔导的15+超长的学习笔记（形成了后来公众号各种思想和推文的基础）
-   - 兔导哔哩哔哩直播的素材文案（实战案例直播的文稿）
-
-3. **未进行微调**：尚未对 Skill 进行模型微调优化
 
 ## 🛠️ 后续改进计划
 
-1. 增加被删除的文章、被删减的文章，同时把更早远的关于 Game 相关的推文加入其中
-2. 按部分加入笔记语料库内的文章，使该 Skill 的效果更好
-3. 将兔导的视频文案转化之后，作为 Skill 的训练素材加入其中
-4. 对各个 Skill 进行阅读和修改，使其更加符合当下 Game 的操作
+1.持续补充被删除和被删减的推文内容，特别是私密空间相关的深度内容
+2.加入兔导的学习笔记语料库，丰富底层理论来源
+3.将兔导的视频文案转化后作为训练素材加入
+4.对各个 Skill 进行持续打磨，使其更加符合当下 Game 的操作
 
 ## 💰 获取方式
 
-- **基础版（/tdskill-basic）**：开源公开免费，可直接下载Zip文件使用；
-- **付费版（/tdskill-max）**：报名兔导的核心私教以上可获取使用权限。
+**本 Skill 为开源公开免费，各位可以免费获取和使用。
 
 **联系兔导：** VX 【Sylvie9711】
